@@ -1,8 +1,8 @@
 // Log in through facebook
 // There are three possible states for the login response:
-//		1) Connected - user is logged into Fb and logged into the app
-//		2) Not Authorized - user logged into FB but not the app
-//			or user is not logged into FB at all.
+//	1) Connected - user is logged into Fb and logged into the app
+//	2) Not Authorized - user logged into FB but not the app or
+//	3) Neither - the user is not logged into FB at all.
 function statusChangeCallback(response) {
 	if (response.status === 'connected') {
 		welcome();
